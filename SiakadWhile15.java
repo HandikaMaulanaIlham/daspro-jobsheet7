@@ -11,8 +11,11 @@ public class SiakadWhile15 {
         while (i < jml) {
             System.out.print("Masukkan Nilai Mahasiswa ke-" + (i + 1) + " : ");
             nilai = sc.nextInt();
+            if(nilai < 0 || nilai > 100) {
+                System.out.println("Nilai Tidak Valid");
+            }
             if(nilai > 80 && nilai <=100) {
-                System.out.println("Masukkan Nilai Mahasiswa ke-" + (i + 1) + " Adalah A");
+            System.out.println("Masukkan Nilai Mahasiswa ke-" + (i + 1) + " Adalah A");
             } else if(nilai > 73 && nilai <=80) {
                 System.out.println("Masukkan Nilai Mahasiswa ke-" + (i + 1) + " Adalah B+");
             } else if(nilai > 65 && nilai <=73) {
